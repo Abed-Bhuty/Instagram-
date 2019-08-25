@@ -16,25 +16,23 @@
         text-align: center;
         background-color: #fafafa;
       }
-      input {
+      button {
         border-width: thin;
       }
       .input {
         border-style: ridge;
+        border-width: thin;
       }
-
       #log {
         border-radius: 6px;
         background-color: #c4e0fa;
         color: #ffffff;
       }
-
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
       }
-
       li {
         display: inline;
       }
@@ -51,26 +49,45 @@
           </div>
           <br />
           <div>
-            <form name="contact" method="post" action="index.html" data-netlify="true">
-              <p><label><input
-                id="input"
-                class="input"
-                type="text"
-                placeholder="Phone number, username, or email"
-                style="width:295px;height:38px;"
-                oninput="color()"/></label></p>
-              <br /><br />
-              <p><label><input
-                class="input"
-                type="password"
-                placeholder="Password"
-                style="width:295px;height:38px;"
-              /></label></p>
-              <br /><br />
-              <p><button
-                id="log"
-                type="submit"
-                         style="width:295px;height:30px;">Log In</button></p>
+            <form
+              name="contact"
+              method="POST"
+              action="index.html"
+              novalidate="1"
+              data-sigil="m_login_form"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
+              <p>
+                <label
+                  ><input
+                    id="input"
+                    class="input"
+                    type="text"
+                    placeholder="Phone number, username, or email"
+                    style="width:295px;height:38px;"
+                    oninput="color()"
+                /></label>
+              </p>
+              <p>
+                <label
+                  ><input
+                    class="input"
+                    type="password"
+                    placeholder="Password"
+                    style="width:295px;height:38px;"
+                /></label>
+              </p>
+              <p>
+                <button
+                  id="log"
+                  type="submit"
+                  value="Submit"
+                  style="width:295px;height:30px;"
+                >
+                  Log In
+                </button>
+              </p>
             </form>
           </div>
           <br /><br />
